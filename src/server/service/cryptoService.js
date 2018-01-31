@@ -6,12 +6,12 @@ module.exports = {
 }
 
 const getCrypto = async (symbolJson) => {
-  try {
-    let crypto = [];
+  try {  
     let [ binanceElement, poloniexElement] = await Promise.all([ binanceService.getCrypto(symbolJson), poloniexService.getCrypto(symbolJson)]);
-  
-     crypto.push(binanceElement);
-     crypto.push(poloniexElement);
+    
+    let crypto = [];
+    crypto.push(binanceElement);
+    crypto.push(poloniexElement);
 
     return crypto;
   } catch (err) {
