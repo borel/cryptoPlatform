@@ -1,0 +1,32 @@
+{
+  "name": "cryptoplatform",
+  "version": "1.0.0",
+  "description": "API to compare crypto plaform price   - Binance    - Coinbase",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server/index.js",
+    "test": "./node_modules/mocha/bin/_mocha ./test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borel/cryptoPlatform.git"
+  },
+  "author": "pbb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/borel/cryptoPlatform/issues"
+  },
+  "homepage": "https://github.com/borel/cryptoPlatform#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "query-string": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai-http": "^3.0.0",
+    "chai": "4.1.1",
+    "mocha": "3.5.0"
+  }
+}
